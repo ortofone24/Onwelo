@@ -1,0 +1,9 @@
+.vs
+.angular
+bin
+obj
+*.db
+*.suo
+wwwroot
+*appsettings.json
+.vscode
