@@ -104,7 +104,7 @@ namespace Onwelo.Api.Features.Votes
 
             await this.voteService.IncrementVotesByOne(candidateId);
 
-            return Ok();
+            return Ok("Voted for candidate");
         }
 
         [Route(nameof(VoterHasVoted))]
@@ -113,7 +113,7 @@ namespace Onwelo.Api.Features.Votes
         {
             await this.voteService.VoterHasVoted(person);
 
-            return Ok();
+            return Ok("Voted!");
         }
     }
 }
